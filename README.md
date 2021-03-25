@@ -4,9 +4,8 @@
 
 Submitted by: **NAME**
 
-Time spent: **#** hours spent in total
-
-Link to project: (insert your link here, should start with https://glitch.com...)
+Time spent: 5
+Link to project: https://glitch.com/edit/#!/defiant-magic-pixie
 
 ## Required Functionality
 
@@ -28,10 +27,6 @@ The following **optional** features are implemented:
 * [ ] Playback speeds up on each turn
 * [ ] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
-
-
-
-
 
 
 ## Reflection Questions
