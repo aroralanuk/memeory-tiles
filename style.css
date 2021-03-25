@@ -5,6 +5,7 @@ body {
   margin: 2em;
   background-color: #DDA0DD;
   color: white; 
+
 }
 
 h1 {
@@ -33,7 +34,9 @@ button {
 }
 
 #button1:active, #button1.lit {
-    background:green;
+/*     background:green; */
+    background:linear-gradient(0deg, rgba(0, 128, 0, 0.5), rgba(0, 128, 0, 0.5)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fjpow.jpeg?v=1616628595900);
+    background-size:cover;
 }
 
 #button2 {
@@ -41,7 +44,8 @@ button {
 }
 
 #button2:active, #button2.lit {
-    background:blue;
+    background:linear-gradient(0deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fstonks.jpg?v=1616628637136);
+    background-size: cover;
 }
 
 #button3 {
@@ -49,7 +53,8 @@ button {
 }
 
 #button3:active, #button3.lit {
-    background:red;
+    background:linear-gradient(0deg, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fmario.jpeg?v=1616628633431);
+    background-size: cover;
 }
 
 #button4 {
@@ -57,7 +62,8 @@ button {
 }
 
 #button4:active, #button4.lit {
-    background:yellow;
+    background:linear-gradient(0deg, rgba(255, 255, 0, 0.5), rgba(255, 255, 0, 0.5)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fsuprised_pikachu.png?v=1616628642592);
+    background-size: cover;
 }
 
 #button5 {
@@ -65,7 +71,9 @@ button {
 }
 
 #button5:active, #button5.lit {
-    background: #ff652f;
+    background:linear-gradient(0deg, rgba(100, 40, 18, 0.7), rgba(100, 40, 18, 0.7)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fhorny.png?v=1616628595059);
+    background-size: cover;
+/*     background: #ff652f; */
 }
 
 #button6 {
@@ -73,5 +81,8 @@ button {
 }
 
 #button6:active, #button6.lit {
-    background: #45a29e;
+  
+    background:linear-gradient(0deg, rgba(27, 64, 62, 0.5), rgba(27, 64, 62, 0.7)), url(https://cdn.glitch.com/3dd6d486-a472-42c9-b157-6446a7e762c7%2Fkeanu.jpeg?v=1616628606892);
+    background-size: cover;
+/*     background: #45a29e; */
 }
