@@ -67,24 +67,30 @@ const freqMap = {
 }
 
 function playTone(btn,len){ 
-  o.frequency.value = freqMap[btn]
-  g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
   tonePlaying = true
+  document.getElementById("audio" + btn).play();
   setTimeout(function(){
-    stopTone()
+    stopTone(btn)
   },len)
 }
 
+// function startTone(btn){
+//   if(!tonePlaying){
+//     o.frequency.value = freqMap[btn]
+//     g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
+//     tonePlaying = true
+//   }
+// }
+
 function startTone(btn){
   if(!tonePlaying){
-    o.frequency.value = freqMap[btn]
-    g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
-    tonePlaying = true
+    document.getElementById("audio" + btn).play();
+    tonePlaying = true;
   }
 }
 
-function stopTone(){
-    g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
+function stopTone(btn){
+    document.getElementById("audio" + btn).pause();
     tonePlaying = false
 }
 
@@ -103,7 +109,8 @@ o.start(0)
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
-    playTone(btn,clueHoldTime);
+    startTone(btn);
+    playTone(btn,clueHoldTime)
     setTimeout(clearButton,clueHoldTime,btn);
     // speeding up eaach subsequent clue by 10%
     clueHoldTime *= 0.9
@@ -148,6 +155,7 @@ function guess(btn){
     }
   } else if (guessCounter < progress){
     guessCounter++;
+    // timer();
   } else if (progress < pattern.length - 1) {
     progress++;
     playClueSequence();
@@ -156,6 +164,20 @@ function guess(btn){
   }
 
 }
+
+// function timer(){
+//   var timeleft = 50;
+//   var timer = setInterval(function(){
+//     if(timeleft <= 0){
+//       clearInterval(timer);
+//       document.getElementById("countdown").innerHTML = "";
+//       loseGame();
+//     } else {
+//       document.getElementById("countdown").innerHTML = timeleft/10 + " seconds remaining";
+//     }
+//     timeleft -= 1;
+//   }, 100);
+// }
 
 
 

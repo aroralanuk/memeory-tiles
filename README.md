@@ -28,6 +28,8 @@ The following **optional** features are implemented:
 * [ ] Playback speeds up on each turn
 * [ ] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
+* [ ] Game button appearance change goes beyond color (e.g. add an image)
+* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 
 
 
@@ -36,16 +38,16 @@ The following **optional** features are implemented:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-None
+StackOverflow
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-I had finals.
+I had finals till 19th March, didn't have enough time to finish the timer.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-None.
+More about setInterval().
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-Implementing optional features.
+Implementing timer and then start randomizing positions of the tiles on the webpage and then maybe mix the images up at later stages to confuse the player.
 
 
 
